@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context="com.example.user.login.Login">
+    <RelativeLayout
+        android:id="@+id/lay01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#8cb8ff">
+        <TextView
+            android:id="@+id/textsaldo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/saldo"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="20dp"
+            android:id="@+id/textView"
+            android:layout_below="@+id/textsaldo"/>
+        <ImageView
+            android:id="@+id/addbutt"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/addbutt"
+            android:layout_marginLeft="14dp"
+            android:layout_marginStart="14dp"
+            android:layout_alignTop="@+id/textView"
+            android:layout_toRightOf="@+id/textView"
+            android:layout_toEndOf="@+id/textView" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:background="#ffff"
+            android:text="Profil"
+            android:layout_margin="5dp"
+            android:id="@+id/buttonprof" />
+    </RelativeLayout>
+    <FrameLayout
+        android:id="@+id/map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/lay01">
+
+        <com.google.android.gms.maps.MapView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </com.google.android.gms.maps.MapView>
+
+    </FrameLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/map"
+        android:layout_toEndOf="@+id/map">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pesan"
+            android:textColor="#ffff"
+            android:background="#3383C1"/>
+    </RelativeLayout>
+</RelativeLayout>

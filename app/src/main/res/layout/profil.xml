@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e3f5ff"
+    android:padding="15dp"
+    tools:context="com.example.user.login.Login">
+
+    <RelativeLayout
+        android:id="@+id/lay01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/shape"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp" />
+
+        <RelativeLayout
+            android:id="@+id/lemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nama"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp">
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_email_black_24dp"/>
+
+            <TextView
+                android:id="@+id/txt_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toEndOf="@id/img1"
+                android:textSize="15dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lemail"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp">
+
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_phone_android_black_24dp"/>/>
+            <TextView
+                android:id="@+id/ak"
+                android:layout_toEndOf="@id/img2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:text="0"/>
+            <TextView
+                android:id="@+id/nohpe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/ak"
+                 />
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/editbutt"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/edit" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lay02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lay01"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/Butttmob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#3383C1"
+            android:text="Tambah mobil"
+            android:textColor="#ffffff" />
+
+        <ListView
+            android:id="@+id/listmobilpro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Butttmob"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/box" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lay02"
+        android:gravity="bottom">
+
+        <Button
+            android:id="@+id/ButtLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="#BCBCBC"
+            android:text="Logout" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

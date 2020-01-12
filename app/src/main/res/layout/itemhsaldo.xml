@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/box2"
+    >
+    <TextView
+        android:id="@+id/no_ref"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:hint="No.Referensi"/>
+
+    <TextView
+        android:id="@+id/nmgdg"
+        android:layout_below="@+id/no_ref"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textSize="18dp"
+        android:ellipsize="marquee"
+        android:maxLines="1"
+        android:hint="Nama Gedung"/>
+
+
+    <TextView
+        android:id="@+id/umasuk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Tanggal"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:textSize="18dp"
+        android:hint="000000"/>
+
+
+    <TextView
+        android:id="@+id/Tanggal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="5dp"
+        android:hint="ddmmyy"/>
+
+
+
+</RelativeLayout>

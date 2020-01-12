@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dfe3eb"
+    android:padding="5dp"
+    tools:context="com.example.user.login.Login">
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/lay01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        card_view:cardBackgroundColor="#ffffff"
+        card_view:cardCornerRadius="8dp"
+        card_view:cardElevation="8dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/layout1"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#8cb8ff"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Selamat datang," />
+
+                <TextView
+                    android:id="@+id/nama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt1"
+                    android:layout_margin="5dp"
+                    android:hint="anon"
+                    android:textSize="18dp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/shape">
+
+                    <ImageView
+                        android:id="@+id/buttonprof"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/profile" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/buttonprof"
+                        android:background="@drawable/triangle" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout1"
+                android:background="#608bd1">
+
+                <ImageView
+                    android:id="@+id/saldologo"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/ic_account_balance_wallet_black" />
+
+                <TextView
+                    android:id="@+id/saldonom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@+id/saldologo"
+                    android:hint="0000"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <RelativeLayout
+        android:id="@+id/menu1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lay01"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/box2">
+
+        <ImageView
+            android:id="@+id/logo2"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/finished" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/logo2"
+            android:text="History"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/menu2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/menu1"
+        android:background="@drawable/box2">
+
+        <ImageView
+            android:id="@+id/tut1"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/whist" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/tut1"
+            android:text="History Saldo"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/menu2">
+
+        <ListView
+            android:id="@+id/listiket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"></ListView>
+
+        <Button
+            android:id="@+id/pesan"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/listiket"
+            android:background="#3383C1"
+            android:text="Pesan"
+            android:textColor="#ffff"
+            android:textSize="18dp" />
+    </RelativeLayout>
+</RelativeLayout>

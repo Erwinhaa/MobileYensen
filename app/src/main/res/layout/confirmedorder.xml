@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e3f5ff"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    tools:context="com.example.user.login.ordercon">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <RelativeLayout
+            android:id="@+id/lay01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lay00"
+            android:background="@drawable/shape"
+            android:padding="5dp">
+
+            <RelativeLayout
+                android:id="@+id/laynm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/icuser"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/ic_account_circle_black_24dp" />
+
+                <TextView
+                    android:id="@+id/namauser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_toEndOf="@+id/icuser"
+                    android:hint="nama user"
+                    android:textSize="16dp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/laynm"
+                android:background="#000000" />
+
+            <RelativeLayout
+                android:id="@+id/laygdg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/laynm">
+
+                <ImageView
+                    android:id="@+id/icgdg"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/ic_business_black_24dp" />
+
+                <TextView
+                    android:id="@+id/nmgdg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_toEndOf="@+id/icgdg"
+                    android:hint="namagdg"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/alamat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/nmgdg"
+                    android:layout_margin="5dp"
+                    android:layout_toEndOf="@+id/icgdg"
+                    android:hint="alamatgdg"
+                    android:textSize="16dp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/laygdg"
+                android:background="#000000" />
+
+            <TextView
+                android:id="@+id/infslot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/laygdg"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:hint="Lantai 0 slot 0"
+                android:textSize="20dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lay02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lay01"
+            android:background="@drawable/shape"
+            android:padding="5dp">
+
+            <RelativeLayout
+                android:id="@+id/lylmpark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/icjam"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/ic_query_builder_black_24dp" />
+
+                <TextView
+                    android:id="@+id/lmprk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_toEndOf="@+id/icjam"
+                    android:hint="0 jam 0 menit 0 detik"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/lylmpark"
+                android:background="#000000" />
+
+            <TextView
+                android:id="@+id/byinf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lylmpark"
+                android:layout_margin="5dp"
+                android:text="Total biaya saat ini:"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/biaya"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/byinf"
+                android:layout_margin="5dp"
+                android:hint="0000"
+                android:textSize="18dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lay03"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lay02"
+            android:background="@drawable/shape"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/icmbl"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_margin="5dp"
+                android:background="@drawable/ic_directions_car_black_24dp" />
+
+            <TextView
+                android:id="@+id/nopl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_toEndOf="@id/icmbl"
+                android:text="No Plat"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/tpm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nopl"
+                android:layout_margin="5dp"
+                android:layout_toEndOf="@id/icmbl"
+                android:hint="tipe"
+                android:textSize="18dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lay04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lay03">
+
+            <Button
+                android:id="@+id/tblbantuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="tombol bantuan" />
+
+            <Button
+                android:id="@+id/peta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="lihat posisi" />
+            <Button
+                android:id="@+id/btnstart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lay05"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lay04"
+            android:background="@drawable/shape">
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Mengubah Slot" />
+
+            <RelativeLayout
+                android:id="@+id/ketslot"
+                android:layout_below="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:id="@+id/ketslot1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/box"
+                    android:hint="xx"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:id="@+id/pnh"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:background="@drawable/next"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/ketslot1"/>
+
+                <TextView
+                    android:id="@+id/ketslot2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_toEndOf="@id/pnh"
+                    android:background="@drawable/box"
+                    android:hint="xx"
+                    android:textSize="16dp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ketslot"
+                android:layout_margin="5dp"
+                android:text="Sedang diproses..." />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

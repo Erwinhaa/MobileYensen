@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e3f5ff">
+    <TextView
+        android:id="@+id/idgdg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mohon memilih lantai yang diinginkan"
+        android:layout_margin="10dp"/>
+    <Spinner
+        android:id="@+id/ltspinner"
+        android:padding="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_margin="10dp"
+        android:overlapAnchor="false" />
+    <GridView
+        android:id="@+id/gridslot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numColumns="10"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:background="@drawable/shape"
+        />
+    <Button
+        android:id="@+id/notif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="notif"
+        />
+</LinearLayout>

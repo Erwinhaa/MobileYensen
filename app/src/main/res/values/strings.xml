@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">MOBILE PARKING</string>
+    <string name="filler">
+        aaaaaaaaaaa
+        aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+        aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+        aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="saldo">Saldo Anda: </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_ddashboard">Ddashboard</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+</resources>

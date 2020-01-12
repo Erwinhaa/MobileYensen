@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/box2"
+    >
+
+    <TextView
+        android:id="@+id/nmgdg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textSize="18dp"
+        android:hint="Nama Gedung"/>
+
+    <TextView
+        android:id="@+id/ltinfo"
+        android:layout_below="@+id/nmgdg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:hint="lantai"/>
+
+    <TextView
+        android:id="@+id/biaya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ltinfo"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:hint="000000"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/ltinfo">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/ic_directions_car_black_24dp"/>
+
+        <TextView
+            android:id="@+id/mobil"
+            android:layout_toEndOf="@+id/icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:textSize="16dp"
+            android:hint="nobk"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/Tanggal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="5dp"
+        android:hint="ddmmyy"/>
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="5dp"
+        android:layout_centerVertical="true"
+        android:hint="status"/>
+
+
+</RelativeLayout>
